@@ -7,10 +7,12 @@ public class Ejercicio02 {
 	public static void main(String[] args) {
 		// variable para guardar el numero n solicitado al usuario
 		int n, a;
-		int mod, count = 0;
+		//variable para guardar la cantidad de numeros primo que hay
+		int count = 0;
 		//creamos el escaner
 		Scanner sc = new Scanner(System.in);
 		
+		//booleana para saber si cada numero es primo o no
 		boolean isPrime = true;
 		
 		//pregumtamos al usuario por el valor de n
