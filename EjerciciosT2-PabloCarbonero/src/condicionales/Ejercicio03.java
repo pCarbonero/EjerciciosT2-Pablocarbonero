@@ -2,6 +2,10 @@ package condicionales;
 
 import java.util.Scanner;
 
+/* ENTRADA: 52, 4, 5 | REL. ESPERADO: COMIDA DE SOBRA | REL. OBTENIDO: COMIDA DE SOBRA
+ * ENTRADA: 80, 20, 5 | REL. ESPERADO: NO HAY FALTA 4 KG | REL. OBTENIDO: NO HAY FALTA 4 KG
+ * ENTRADA: 0, 20, 5 | REL. ESPERADO: NO ANIMALES | REL. OBTENIDO: NO ANIMALES
+ */
 public class Ejercicio03 {
 
 	public static void main(String[] args) {

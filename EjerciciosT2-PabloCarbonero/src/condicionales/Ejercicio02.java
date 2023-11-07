@@ -2,6 +2,11 @@ package condicionales;
 
 import java.util.Scanner;
 
+/* ENTRADA: 29587038 | REL. ESPERADO: E | REL. OBTENIDO: E
+ * ENTRADA: 00000000 | REL. ESPERADO: K | REL. OBTENIDO: T
+ * ENTRADA: 295038 | REL. ESPERADO: NUM INCORRECTO | REL. OBTENIDO: NUM INCORRECTO
+ * ENTRADA: 295038859632 | REL. ESPERADO: NUM INCORRECTO | REL. OBTENIDO: NUM INCORRECTO
+ */
 public class Ejercicio02 {
 
 	public static void main(String[] args) {
