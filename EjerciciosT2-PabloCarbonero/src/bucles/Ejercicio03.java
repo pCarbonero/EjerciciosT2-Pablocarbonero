@@ -25,20 +25,22 @@ public class Ejercicio03 {
 			}//fin catch
 		} while (num < 0);
 		
-		
+		//creamos un bucle for que hará los saltos de linea
 		for (int i = 1; i <= num; i++) {
+			//creamos un segundo bucle que hará los espacios antes de dibujar los asteriscos
 			for (int j = 1; j <= num - i; j++) {
-				System.out.println(" ");
-				
+				System.out.print(" ");				
 			}//fin bucle j
-			System.out.println("* ");
-			sc.nextLine();
-			//cos
 			
+			//creamos un tercer bucle que dibujará los asteriscos
+			for (int k = 1; k <= i; k++) {
+				System.out.print("* ");		
+			}//fin bucle k
+			System.out.println(" ");	
 		}//fin bucle i
 		
-		
-		
+		//cerramos el escaner
+		sc.close();	
 	    }//fin main
 
 	}//fin class
