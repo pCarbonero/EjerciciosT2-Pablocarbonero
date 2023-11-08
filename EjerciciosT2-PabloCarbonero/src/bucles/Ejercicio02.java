@@ -20,27 +20,32 @@ public class Ejercicio02 {
 		//guardamos el valor introducido en la variable
 		n = sc.nextInt();
 		
-		
-		//creamos un bucle for que va a recorrer todos los numeros desde n hasta 1
-		for (int i = n; i > 1; i--) {
-			//al principio de cada iteración reestablecenmos la boleana a true
-			isPrime = true;
-			//creamos otro bucle dentro que va a comprobar si el valor de n en el momento es primo o no
-			for (int j = 2; j <= i-1; j++) {
-				//si el modulo de i, es decir, el valor de n en el momento es 0 entonces es que no es primo por lo que hacemo la booleana false
-				if (i%j == 0) {
-					isPrime = false;
+		if (n > 1) {		
+			//creamos un bucle for que va a recorrer todos los numeros desde n hasta 1
+			for (int i = n; i > 1; i--) {
+				//al principio de cada iteración reestablecenmos la boleana a true
+				isPrime = true;
+				//creamos otro bucle dentro que va a comprobar si el valor de n en el momento es primo o no
+				for (int j = 2; j <= i-1; j++) {
+					//si el modulo de i, es decir, el valor de n en el momento es 0 entonces es que no es primo por lo que hacemo la booleana false
+					if (i%j == 0) {
+						isPrime = false;
+						break;
+					}
+				}				
+				//si la booleana no se convirtió en false la vez anterior entonces suma uno al contador de números primos
+				if(isPrime) {
+					count++;
 				}
 			}
-			
-			//si la booleana no se convirtió en false la vez anterior entonces suma uno al contador de números primos
-			if(isPrime) {
-				count++;
-			}
+			//imprimimos el resultado
+			System.out.println("Hay " + count + " números primos ");
+		}
+		else {
+			System.out.println("Asegurate de que el número introducido es positvo y mayor que 1 ");
 		}
 		
-		//imprimimos el resultado
-		System.out.println("Hay " + count + " números primos ");
+
 		//cerramos el escaner
 		sc.close();
 	}
