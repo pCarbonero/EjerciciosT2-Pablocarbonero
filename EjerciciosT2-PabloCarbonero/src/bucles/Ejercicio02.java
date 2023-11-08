@@ -16,7 +16,7 @@ public class Ejercicio02 {
 		boolean isPrime = true;
 		
 		//pregumtamos al usuario por el valor de n
-		System.out.println("Cuanto vale n? ");
+		System.out.println("Dame un valor para n y te diré cuantos numeros primos hay entre 1 y n ");
 		//guardamos el valor introducido en la variable
 		n = sc.nextInt();
 		
@@ -40,7 +40,7 @@ public class Ejercicio02 {
 		}
 		
 		//imprimimos el resultado
-		System.out.println(count);
+		System.out.println("Hay " + count + " números primos ");
 		//cerramos el escaner
 		sc.close();
 	}
