@@ -22,7 +22,7 @@ public class Ejercicio05 {
 				//creamos un bucle en el cual igualamos i a un ternario que comprueba si b es mayor que a de forma que i es igual al numero mayor de los dos
 				for (int i = (a<b) ? a : b; i >= 1; i++) {
 					
-					//comprobamos si el modulo de a y b con cada numero es 0, si es asi es que ese es el mcd
+					//comprobamos si el modulo de a y b con cada numero es 0, si es asi es que ese es el mcm
 					if (i/a == b && i/b == a) {
 						mcm = i;
 						//paramos el bucle ya que no es necesario seguir
