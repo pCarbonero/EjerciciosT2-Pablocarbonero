@@ -13,14 +13,14 @@ public class Ejercicio06 {
 		Scanner sc = new Scanner(System.in);
 		
 		//creamos el trycatch 
-		//bucle para asegurarnos de que la hora está bien introducida
 		do {
 			try {
 			//preguntamos por el número
 			System.out.println("Dime un número del 1 al 20 ");
-			n = sc.nextInt(); //guardamos el valor introducido en la variable
-					
-			}catch (InputMismatchException e) { //en caso de no introducir número imprimimos el siguiente mensaje
+			//guardamos el valor introducido en la variable
+			n = sc.nextInt();
+			//en caso de no introducir número imprimimos el siguiente mensaje		
+			}catch (InputMismatchException e) { 
 				System.out.println("Asegurate de introducir carácteres numéricos ");
 				//"limpiamos" el escaner para introducir de nuevo por consola algo
 				sc.nextLine();
@@ -33,6 +33,7 @@ public class Ejercicio06 {
 			for (int j = 1; j <= i; j++) {
 				System.out.print(i);			
 			}//fin for j
+			//hacemos un println para hacer el salto de linea
 			System.out.println("");		
 		}//fin for i
 		
