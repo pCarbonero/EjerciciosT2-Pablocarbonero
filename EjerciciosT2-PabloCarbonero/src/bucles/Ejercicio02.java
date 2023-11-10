@@ -20,7 +20,7 @@ public class Ejercicio02 {
 		boolean isPrime = true;
 		
 			
-		//bucle para asegurarnos de que la hora está bien introducida
+		//hacemos el try catch
 		do {
 			try {
 				//pregumtamos al usuario por el valor de n
