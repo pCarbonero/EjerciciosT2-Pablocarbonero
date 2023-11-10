@@ -21,11 +21,11 @@ public class Ejercicio01 {
 				hour = sc.nextInt();//guardamos el valor introducido en la variable
 						
 				}catch (InputMismatchException e) {
-					System.out.println("Asegurate de introducir carácteres numéricos");
+					System.out.println("El valor introducido no es correcto, introdúcelo otra vez");
 					sc.nextLine();
 				}
 					
-			} while (hour < 0 && hour < 23);
+			} while (hour < 0 || hour > 23);
 			
 			do {
 				try {
@@ -34,11 +34,11 @@ public class Ejercicio01 {
 				min = sc.nextInt();//guardamos el valor introducido en la variable
 						
 				}catch (InputMismatchException e) {
-					System.out.println("Asegurate de introducir carácteres numéricos");
+					System.out.println("El valor introducido no es correcto, introdúcelo otra vez");
 					sc.nextLine();
 				}
 					
-			} while (min < 0 && min < 60);
+			} while (min < 0 || min > 60);
 			
 			do {
 				try {
@@ -47,11 +47,11 @@ public class Ejercicio01 {
 				sec = sc.nextInt();//guardamos el valor introducido en la variable
 						
 				}catch (InputMismatchException e) {
-					System.out.println("Asegurate de introducir carácteres numéricos");
+					System.out.println("El valor introducido no es correcto, introdúcelo otra vez ");
 					sc.nextLine();
 				}
 					
-			} while (min < 0 && min < 60);
+			} while (min < 0 || min > 60);
 		
 			do {
 				try {
@@ -59,7 +59,7 @@ public class Ejercicio01 {
 					inc = sc.nextInt();//guardamos el valor introducido en la variable
 						
 				}catch (InputMismatchException e) {
-					System.out.println("Asegurate de introducir carácteres numéricos");
+					System.out.println("El valor introducido no es correcto, introdúcelo otra vez ");
 					sc.nextLine();
 				}
 					
