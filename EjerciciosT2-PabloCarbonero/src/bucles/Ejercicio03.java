@@ -1,7 +1,15 @@
 package bucles;
 
 import java.util.InputMismatchException;
+
 import java.util.Scanner;
+/* ENTRADA: 3 | RES. ESPERADO:   *| RES. OBTENIDO:   *
+ *                              * *                 * *
+ *                             * * *               * * *
+ * ENTRADA: dos | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ * ENTRADA: -8 | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ * ENTRADA: 3.5 | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ */
 
 public class Ejercicio03 {
 
@@ -19,7 +27,7 @@ public class Ejercicio03 {
 				System.out.println("Dime el número de la base del triángulo ");
 				num = sc.nextInt();			
 			} catch (InputMismatchException e) {
-				System.out.println("Asegurate de que estás introduciendo carácteres numéricos ");
+				System.out.println("El valor introducido no es correcto, introdúcelo otra vez ");
 				sc.nextLine();
 			}//fin catch
 		} while (num < 0);
