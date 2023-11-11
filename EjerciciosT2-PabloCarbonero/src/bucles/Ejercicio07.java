@@ -3,6 +3,20 @@ package bucles;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/* ENTRADA: 4 | RES. ESPERADO:   1  | RES. OBTENIDO: 1
+ *                               121                 121
+ *                               12321               12321
+ *                               1234321             1234321
+ * ENTRADA: 5 | RES. ESPERADO:   1  | RES. OBTENIDO: 1
+ *                               121                 121
+ *                               12321               12321
+ *                               1234321             1234321
+ *                               123454321           123454321 
+ * ENTRADA: 63 | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ * ENTRADA: 0 | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ * ENTRADA: numero | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ */
+
 public class Ejercicio07 {
 
 	public static void main(String[] args) {
@@ -40,6 +54,8 @@ public class Ejercicio07 {
 			System.out.println("");		
 		}//fin for i
 
+		//cerramos el escaner
+		sc.close();
 	}
 
 }
