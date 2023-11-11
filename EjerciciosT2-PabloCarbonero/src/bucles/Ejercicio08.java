@@ -25,6 +25,7 @@ public class Ejercicio08 {
 			System.out.println("Dime un número inicial ");
 			//guardamos el valor introducido en la variable
 			num = sc.nextInt();
+			greater = num;
 			//en caso de no introducir número imprimimos el siguiente mensaje		
 			}catch (InputMismatchException e) { 
 				System.out.println("Asegurate de introducir carácteres numéricos ");
@@ -38,18 +39,21 @@ public class Ejercicio08 {
 			System.out.println("Escribe el siguiente número ");
 			//guardamos el número en la variable ans
 			ans = sc.nextInt();
-			if (ans > greater) {
-				greater = ans;
-			}
-			if (ans < greater) {
+			
+			//si el número introducido es menor al anterior y distinto de cero cuenta un fallo
+			if (ans <= greater && ans != 0) {
 				System.out.println("Has fallado");
 				failCount++;
 			}
+			//convertimos el numero que tendrá que comparar luego con el ultimo introducido
+			greater = ans;
 			numberCount++;
 		} while (ans > 0);
 		
+		//imprimimos el resultado final
 		System.out.println("Total números introducidos " + numberCount);
 		System.out.println("Total fallos " + failCount);
+		//cerramos el escaner
 		sc.close();
 	}//fin main
 
