@@ -33,7 +33,7 @@ public class Ejercicio08 {
 			greater = num;
 			//en caso de no introducir número imprimimos el siguiente mensaje		
 			}catch (InputMismatchException e) { 
-				System.out.println("Asegurate de introducir carácteres numéricos ");
+				System.out.println("El valor introducido no es correcto ");
 				//"limpiamos" el escaner para introducir de nuevo por consola algo
 				sc.nextLine();
 				}//fin catch	
