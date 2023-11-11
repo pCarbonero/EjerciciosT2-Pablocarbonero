@@ -1,7 +1,11 @@
 package condicionales;
 
 import java.util.Scanner;
-
+/* ENTRADA: 9 | REL. ESPERADO: 9.0 | REL. OBTENIDO: 9.0
+ * ENTRADA: -89 | REL. ESPERADO: 89.0 | REL. OBTENIDO: 89.0
+ * ENTRADA: 0 | REL. ESPERADO: 0 | REL. OBTENIDO: 0
+  * ENTRADA: -9.3 | REL. ESPERADO: 9.3 | REL. OBTENIDO: 9.3
+ */
 public class Ejercicio05 {
 
 	public static void main(String[] args) {
