@@ -2,7 +2,9 @@ package condicionales;
 
 import java.util.Random;
 import java.util.Scanner;
-
+/* ENTRADA: (53+30) 83 | REL. ESPERADO: Correcto | REL. OBTENIDO: Correcto
+ * ENTRADA: (53+30) 96 | REL. ESPERADO: Fallo | REL. OBTENIDO: Fallo
+ */
 public class Ejercicio06 {
 
 	public static void main(String[] args) {
