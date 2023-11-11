@@ -1,7 +1,9 @@
 package condicionales;
 
 import java.util.Scanner;
-
+/* ENTRADA: 8, 563 | RES. ESPERADO: 1407.5€ | RES. OBTENIDO: 1407.5€
+ * ENTRADA: 9, 963| RES. ESPERADO: 1685.25€ | RES. OBTENIDO: 1685.25€
+ */
 public class Ejercicio08 {
 
 	public static void main(String[] args) {
