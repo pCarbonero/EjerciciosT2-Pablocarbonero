@@ -4,6 +4,19 @@ import java.util.InputMismatchException;
 
 import java.util.Scanner;
 
+/* ENTRADA: 4 | RES. ESPERADO:   1  | RES. OBTENIDO: 1
+ *                               22                  22
+ *                               333                 333
+ *                               4444                4444
+/* ENTRADA: 5 | RES. ESPERADO:   1  | RES. OBTENIDO: 1
+ *                               22                  22
+ *                               333                 333
+ *                               4444                4444
+ *                               55555               55555 
+ * ENTRADA: 63 | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ * ENTRADA: 0 | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ * ENTRADA: numero | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ */
 public class Ejercicio06 {
 
 	public static void main(String[] args) {
