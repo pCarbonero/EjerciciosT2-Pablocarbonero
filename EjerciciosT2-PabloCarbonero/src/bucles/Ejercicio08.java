@@ -2,7 +2,12 @@ package bucles;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/* ENTRADA: 20, 21 | RES. ESPERADO: continua | RES. OBTENIDO: continua
+ * ENTRADA: 20, 8 | RES. ESPERADO: Has fallado | RES. OBTENIDO: Has fallado
+ * ENTRADA: 0 | RES. ESPERADO: Fin | RES. OBTENIDO: Fin
+ * ENTRADA: 8.3 | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ * ENTRADA: numero | RES. ESPERADO: ERROR | RES. OBTENIDO: ERROR
+ */
 public class Ejercicio08 {
 
 	public static void main(String[] args) {
