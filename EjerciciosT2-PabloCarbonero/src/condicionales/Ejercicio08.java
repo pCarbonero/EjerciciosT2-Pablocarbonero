@@ -25,12 +25,15 @@ public class Ejercicio08 {
 		System.out.println("Cuantos kilometros tiene el viaje ");
 		km = sc.nextFloat();
 		
+		//comprobamos si cumple los requisitos para el descuento
 		if (days > 7 && km > 800) {
+			//si los cumple convertimos la booleana a true
 			isDiscount = true;
 		}
-		
+		//calculamos el precio
 		price = (float) (km * KMPRICE);
 		
+		//si hay descuento le aplicamos el descuento
 		if (isDiscount) {
 			price = price - (price * DISCOUNT);
 		}
